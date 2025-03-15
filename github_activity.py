@@ -51,7 +51,7 @@ FILE_TYPES = [
 def parse_arguments():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(description="GitHub活动模拟器 - 安全版")
-    parser.add_argument("--days", type=int, default=180, help="要模拟的天数")
+    parser.add_argument("--days", type=int, default=360, help="要模拟的天数")
     parser.add_argument("--max-commits", type=int, default=5, help="每天的最大提交数")
     parser.add_argument("--method", type=str, choices=["temp-repo", "new-repo", "orphan-branch", "dry-run"], 
                         default="temp-repo", help="使用哪种方法进行模拟")
